@@ -1,0 +1,32 @@
+shell settings put global zen_mode 1
+shell settings put system screen_brightness 0
+shell settings put system screen_brightness_float 0.0
+shell settings put system screen_off_timeout 60000
+shell settings put secure location_mode 0
+shell settings put secure location_providers_allowed -gps
+shell settings put secure location_providers_allowed -network
+shell am broadcast -a android.bluetooth.adapter.action.REQUEST_DISABLE
+shell svc wifi disable
+shell settings put global development_settings_enabled 1
+shell settings put global stay_on_while_plugged_in 7
+# shell cmd settings put secure theme_mode 3
+shell settings put global auto_time 1
+shell settings put global auto_time_zone 0
+shell settings put global power_sounds_enabled 0
+#shell settings put global charging_started_sound ""
+#shell settings put global desk_dock_sound ""
+# shell setprop persist.sys.timezone "America/New_York"
+shell settings put system time_12_24 24
+shell settings put system notification_sound content://media/internal/audio/media/39?title=Uplink&canonical=1
+shell settings put system notification_sound_set 0
+shell settings put system alarm_alert content://media/internal/audio/media/12?title=Crisp%20reverberation&canonical=1
+shell settings put system ringtone content://media/internal/audio/media/34?title=Cloud&canonical=1
+shell settings put system dtmf_tone 0
+shell settings put system haptic_feedback_enabled 0
+shell settings put system lockscreen_sounds_enabled 0
+shell settings put secure charging_sounds_enabled 0
+shell settings put secure lock_screen_allow_private_notifications 0
+shell settings put secure lock_screen_owner_info_enabled 0
+shell settings put secure lock_screen_show_notifications 0
+shell settings put secure volume_hush_gesture 2
+shell settings put secure disabled_print_services com.android.bips/.BuiltInPrintService
